@@ -12,11 +12,10 @@ from datetime import datetime
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 
-from pywinauto import Application, timings, findwindows
-import win32gui
-import win32con
-
 from PIL import Image
+
+# NOTA: pywinauto (Application, timings, findwindows) e win32gui/win32con
+# são importados dentro do DomBot para evitar conflito COM com tkinter/filedialog
 
 # Configura automaticamente o caminho do UnRAR.exe
 possible_paths = [
@@ -41,6 +40,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # ==============================================================================
 class DomBot:
     def __init__(self, log_callback=None, progress_callback=None, ui_reference=None):
+        # Import tardio para evitar conflito COM com tkinter/filedialog
+        from pywinauto import Application, timings, findwindows
+        import win32gui
+        import win32con
+
+        self._Application = Application
+        self._timings = timings
+        self._findwindows = findwindows
+        self._win32gui = win32gui
+        self._win32con = win32con
+
         self.log_callback = log_callback or print
         self.progress_callback = progress_callback
         self.ui_reference = ui_reference
@@ -51,12 +61,13 @@ class DomBot:
         self.pdfs_processados = 0
         self.pdfs_sucesso = 0
 
-        # Configurações do pywinauto
-        timings.Timings.window_find_timeout = 5
-        timings.Timings.app_start_timeout = 10
-        timings.Timings.exists_timeout = 1
-        timings.Timings.after_click_wait = 0.1
-        timings.Timings.after_editsetedittext_wait = 0.1
+        # Configurações do pywinauto (otimizadas para velocidade)
+        timings.Timings.window_find_timeout = 3
+        timings.Timings.app_start_timeout = 5
+        timings.Timings.exists_timeout = 0.3
+        timings.Timings.after_click_wait = 0.05
+        timings.Timings.after_editsetedittext_wait = 0.05
+        timings.Timings.after_setfocus_wait = 0.05
 
     def log(self, mensagem):
         formatted = f"{datetime.now().strftime('%H:%M:%S')} - {mensagem}"
@@ -83,12 +94,12 @@ class DomBot:
             self.log("Procurando janela do Domínio Escrita Fiscal...")
 
             try:
-                all_windows = findwindows.find_windows()
+                all_windows = self._findwindows.find_windows()
                 self.log(f"Total de janelas abertas: {len(all_windows)}")
 
                 for hwnd in all_windows:
                     try:
-                        title = win32gui.GetWindowText(hwnd)
+                        title = self._win32gui.GetWindowText(hwnd)
                         # Ignorar janela própria
                         if "DomPub" in title or "DomBot" in title:
                             continue
@@ -105,16 +116,16 @@ class DomBot:
             except Exception as e:
                 self.log(f"Erro ao listar janelas: {str(e)}")
 
-            windows = findwindows.find_windows(title_re=".*Domínio.*Escrita.*")
+            windows = self._findwindows.find_windows(title_re=".*Domínio.*Escrita.*")
             if windows:
                 self.log(f"Janela do Domínio encontrada via regex (total: {len(windows)})")
                 return windows[0]
 
-            windows = findwindows.find_windows(title_re=".*Domínio.*")
+            windows = self._findwindows.find_windows(title_re=".*Domínio.*")
             if windows:
                 for window in windows:
                     try:
-                        title = win32gui.GetWindowText(window)
+                        title = self._win32gui.GetWindowText(window)
                         if "DomPub" not in title and "DomBot" not in title:
                             self.log(f"Janela candidata via regex flexível: '{title}'")
                             return window
@@ -136,14 +147,14 @@ class DomBot:
                 self.log("Janela do Domínio Escrita Fiscal não encontrada.")
                 return False
 
-            if win32gui.IsIconic(handle):
-                win32gui.ShowWindow(handle, win32con.SW_RESTORE)
+            if self._win32gui.IsIconic(handle):
+                self._win32gui.ShowWindow(handle, self._win32con.SW_RESTORE)
                 time.sleep(1)
 
-            win32gui.SetForegroundWindow(handle)
+            self._win32gui.SetForegroundWindow(handle)
             time.sleep(0.5)
 
-            self.app = Application(backend="uia").connect(handle=handle)
+            self.app = self._Application(backend="uia").connect(handle=handle)
             self.main_window = self.app.window(handle=handle)
 
             self.log("Conectado ao Domínio Escrita Fiscal com sucesso")
@@ -164,7 +175,7 @@ class DomBot:
                 return False
 
             try:
-                all_windows = findwindows.find_windows()
+                all_windows = self._findwindows.find_windows()
                 for hwnd in all_windows:
                     try:
                         window = self.app.window(handle=hwnd)
@@ -219,36 +230,6 @@ class DomBot:
         self.log("Não foi possível clicar no botão OK")
         return False
 
-    def interact_with_element(self, element, action, value=None, max_attempts=5):
-        for attempt in range(max_attempts):
-            try:
-                if action == "set_focus":
-                    element.set_focus()
-                elif action == "set_edit_text":
-                    element.set_edit_text(value)
-                elif action == "click":
-                    element.click()
-                return True
-            except Exception as e:
-                self.log(f"Tentativa {attempt + 1} falhou: {str(e)}")
-                time.sleep(1)
-        self.log(f"Falha após {max_attempts} tentativas.")
-        return False
-
-    def limpar_campo(self, elemento, nome_campo):
-        """Limpa um campo antes de preencher para evitar dados residuais"""
-        try:
-            if elemento.exists():
-                elemento.set_focus()
-                time.sleep(0.2)
-                elemento.set_edit_text("")
-                time.sleep(0.1)
-                self.log(f"Campo '{nome_campo}' limpo com sucesso.")
-                return True
-        except Exception as e:
-            self.log(f"Erro ao limpar campo '{nome_campo}': {str(e)}")
-        return False
-
     # === FUNÇÕES DE ARQUIVO ===
     def carregar_mapeamento(self, pasta):
         """Carrega o mapeamento empresa->código do JSON gerado pelo Spoon"""
@@ -256,11 +237,39 @@ class DomBot:
         if os.path.exists(caminho_json):
             with open(caminho_json, 'r', encoding='utf-8') as f:
                 mapeamento = json.load(f)
-            self.log(f"Mapeamento carregado: {len(mapeamento)} empresas")
+            self.log(f"Mapeamento JSON carregado: {len(mapeamento)} empresas")
             return mapeamento
         else:
-            self.log("AVISO: Arquivo mapeamento_empresas.json não encontrado!")
-            return {}
+            self.log("JSON não encontrado. Tentando extrair códigos dos nomes das pastas...")
+            return self.extrair_mapeamento_das_pastas(pasta)
+
+    def extrair_mapeamento_das_pastas(self, pasta):
+        """Fallback: extrai mapeamento {nome_pasta: código} do padrão 'CÓDIGO - NOME'"""
+        mapeamento = {}
+        for nome_pasta in os.listdir(pasta):
+            caminho = os.path.join(pasta, nome_pasta)
+            if os.path.isdir(caminho) and ' - ' in nome_pasta:
+                partes = nome_pasta.split(' - ', 1)
+                if len(partes) > 1:
+                    codigo = partes[0].strip()
+                    mapeamento[nome_pasta] = codigo
+        if mapeamento:
+            self.log(f"Mapeamento extraído dos nomes das pastas: {len(mapeamento)} empresas")
+        else:
+            self.log("AVISO: Nenhuma pasta com padrão 'CÓDIGO - NOME' encontrada!")
+        return mapeamento
+
+    def resolver_codigo_empresa(self, nome_pasta):
+        """Resolve o código de uma empresa: JSON > nome da pasta > '000'"""
+        # 1. Tenta pelo mapeamento (JSON)
+        if nome_pasta in self.empresa_para_numero:
+            return self.empresa_para_numero[nome_pasta]
+        # 2. Tenta extrair do nome da pasta (padrão "CÓDIGO - NOME")
+        if ' - ' in nome_pasta:
+            codigo = nome_pasta.split(' - ', 1)[0].strip()
+            return codigo
+        # 3. Sem código encontrado
+        return None
 
     def extrair_zip(self, arquivo_zip, diretorio_destino):
         with zipfile.ZipFile(arquivo_zip, 'r') as zip_ref:
@@ -271,19 +280,6 @@ class DomBot:
         with rarfile.RarFile(arquivo_rar) as rar_ref:
             rar_ref.extractall(diretorio_destino)
         self.log(f"Arquivo RAR extraído com sucesso: {arquivo_rar}")
-
-    def renomear_pastas(self, diretorio):
-        for nome_pasta in os.listdir(diretorio):
-            caminho_antigo = os.path.join(diretorio, nome_pasta)
-            if os.path.isdir(caminho_antigo) and ' - ' in nome_pasta:
-                partes = nome_pasta.split(' - ', 1)
-                if len(partes) > 1:
-                    codigo_empresa = partes[0]
-                    novo_nome = partes[1]
-                    caminho_novo = os.path.join(diretorio, novo_nome)
-                    os.rename(caminho_antigo, caminho_novo)
-                    self.empresa_para_numero[novo_nome] = codigo_empresa
-                    self.log(f'Renomeado: "{nome_pasta}" -> "{novo_nome}" (Código: {codigo_empresa})')
 
     def compactar_em_zip(self, diretorio, saida_zip):
         with zipfile.ZipFile(saida_zip, 'w', zipfile.ZIP_DEFLATED) as zipf:
@@ -321,6 +317,44 @@ class DomBot:
                         os.rmdir(caminho_diretorio)
 
     # === AUTOMAÇÃO PRINCIPAL ===
+    def localizar_elementos_publicacao(self):
+        """Localiza e cacheia os elementos da janela de publicação. Chamado uma vez."""
+        pub_window = self.main_window.child_window(title="Publicação de Documentos Externos")
+        if not pub_window.exists(timeout=3):
+            self.log("Janela 'Publicação de Documentos Externos' não encontrada.")
+            return False
+
+        self._pub_window = pub_window
+        self._campo_caminho = pub_window.child_window(class_name="Edit", auto_id="1013")
+        self._campo_numero = pub_window.child_window(class_name="PBEDIT190", auto_id="1001")
+        self._botao_publicar = pub_window.child_window(class_name="Button", auto_id="1003")
+        self.log("Elementos da janela de publicação localizados.")
+        return True
+
+    def _publicar_pdf(self, pdf_path, numero_empresa):
+        """Executa a publicação de um PDF. Lança exceção se falhar."""
+        self._campo_numero.set_edit_text("")
+        self._campo_caminho.set_edit_text(pdf_path)
+        self._campo_numero.set_edit_text(numero_empresa)
+
+        # Verificação rápida
+        valor = self._campo_numero.get_value()
+        if numero_empresa not in str(valor):
+            raise ValueError(f"Campo contém '{valor}' esperava '{numero_empresa}'")
+
+        self._botao_publicar.click()
+        time.sleep(0.5)
+
+        dialog = self.aguardar_janela_confirmacao_interruptivel(timeout=10)
+        if dialog is False:
+            raise InterruptedError("Interrompido")
+        elif dialog:
+            if not self.clicar_botao_ok(dialog):
+                raise RuntimeError("Falha ao clicar OK")
+            time.sleep(0.3)
+        else:
+            raise TimeoutError("Janela de confirmação não apareceu")
+
     def interact_with_dominio_escrita_fiscal(self, pdf_path, numero_empresa, empresa):
         """Publica um PDF no Domínio Escrita Fiscal. Retorna True se sucesso."""
         if self.check_interrupted():
@@ -329,84 +363,31 @@ class DomBot:
         publicacao_bem_sucedida = False
 
         try:
-            timings.Timings.window_find_timeout = 20
+            self._publicar_pdf(pdf_path, numero_empresa)
+            self.log(f"Publicado - {empresa} | {numero_empresa} | {os.path.basename(pdf_path)}")
+            publicacao_bem_sucedida = True
 
-            pub_window = self.main_window.child_window(title="Publicação de Documentos Externos")
-
-            if not pub_window.exists():
-                self.log("Janela 'Publicação de Documentos Externos' não encontrada.")
-                return False
-
-            onvio_processos = pub_window.child_window(class_name="Edit", auto_id="1013")
-            campo_numero = pub_window.child_window(class_name="PBEDIT190", auto_id="1001")
-            botao = pub_window.child_window(class_name="Button", auto_id="1003")
-
-            self.log(f"--- Iniciando envio: {empresa} (Código: {numero_empresa}) ---")
-
-            if not self.limpar_campo(campo_numero, "Número Empresa"):
-                self.log("ERRO CRÍTICO: Não foi possível limpar o campo do número da empresa. Abortando para evitar envio incorreto.")
-                return False
-
-            self.limpar_campo(onvio_processos, "Onvio Processos")
-
-            if onvio_processos.exists() and self.interact_with_element(onvio_processos, "set_focus") and \
-               self.interact_with_element(onvio_processos, "set_edit_text", pdf_path):
-                self.log(f"Campo Onvio Processos preenchido com: {pdf_path}")
-            else:
-                self.log("ERRO: Falha ao interagir com o campo Onvio Processos. Abortando envio.")
-                return False
-
-            if campo_numero.exists() and self.interact_with_element(campo_numero, "set_focus") and \
-               self.interact_with_element(campo_numero, "set_edit_text", numero_empresa):
-                self.log(f"Campo empresa preenchido com o número: {numero_empresa}")
-            else:
-                self.log(f"ERRO CRÍTICO: Falha ao preencher o número da empresa '{numero_empresa}'. Abortando para evitar envio incorreto.")
-                return False
-
-            time.sleep(0.3)
-            try:
-                valor_campo = campo_numero.get_value() if campo_numero.exists() else ""
-                if numero_empresa not in str(valor_campo):
-                    self.log(f"ERRO CRÍTICO: Verificação falhou! Campo contém '{valor_campo}' mas deveria conter '{numero_empresa}'. Abortando envio.")
-                    return False
-                self.log(f"Verificação OK: Campo contém '{valor_campo}'")
-            except Exception as e:
-                self.log(f"AVISO: Não foi possível verificar o campo: {str(e)}. Continuando com cautela...")
-
-            if botao.exists() and self.interact_with_element(botao, "click"):
-                self.log("Botão publicar clicado com sucesso!")
-                time.sleep(2)
-
-                dialog = self.aguardar_janela_confirmacao_interruptivel(timeout=15)
-                if dialog is False:
-                    return False
-                elif dialog:
-                    if self.clicar_botao_ok(dialog):
-                        self.log("Botão OK clicado na janela de Atenção.")
-                        self.log(f"Publicado com sucesso - Empresa: {empresa} | Código: {numero_empresa} | Arquivo: {os.path.basename(pdf_path)}")
-                        publicacao_bem_sucedida = True
-                        time.sleep(1)
-                    else:
-                        self.log("ERRO: Falha ao clicar no botão OK.")
-                else:
-                    self.log("ERRO: Janela de Atenção não apareceu após 15 segundos.")
-            else:
-                self.log("ERRO: Falha ao clicar no botão publicar.")
-
+        except InterruptedError:
+            pass
         except Exception as e:
-            self.log(f"ERRO ao interagir com Domínio Escrita Fiscal: {str(e)}")
+            # Tenta relocalizar elementos (janela pode ter sido recriada)
+            self.log(f"Erro: {str(e)} - Relocalizando elementos...")
+            try:
+                if self.localizar_elementos_publicacao():
+                    self._publicar_pdf(pdf_path, numero_empresa)
+                    self.log(f"Publicado (retry) - {empresa} | {numero_empresa} | {os.path.basename(pdf_path)}")
+                    publicacao_bem_sucedida = True
+                else:
+                    self.log(f"FALHA: Não foi possível relocalizar elementos.")
+            except Exception as e2:
+                self.log(f"FALHA no retry: {str(e2)}")
 
         finally:
             self.pdfs_processados += 1
             self.update_progress(
                 self.pdfs_processados, self.total_pdfs,
-                f"{'SUCESSO' if publicacao_bem_sucedida else 'FALHA'}: {os.path.basename(pdf_path)}"
+                f"{'OK' if publicacao_bem_sucedida else 'FALHA'}: {os.path.basename(pdf_path)}"
             )
-
-            if publicacao_bem_sucedida:
-                self.log(f"[SUCESSO] PDF {self.pdfs_processados}/{self.total_pdfs}: {os.path.basename(pdf_path)}")
-            else:
-                self.log(f"[FALHA] PDF {self.pdfs_processados}/{self.total_pdfs}: {os.path.basename(pdf_path)} (Empresa: {empresa}, Código: {numero_empresa})")
 
         return publicacao_bem_sucedida
 
@@ -432,7 +413,7 @@ class DomBot:
                 self.empresa_para_numero = self.carregar_mapeamento(diretorio)
 
                 if not self.empresa_para_numero:
-                    return False, "Arquivo mapeamento_empresas.json não encontrado na pasta selecionada!"
+                    return False, "Nenhum mapeamento encontrado (nem JSON, nem padrão 'CÓDIGO - NOME' nas pastas)."
 
                 self.total_pdfs = 0
                 for empresa in os.listdir(diretorio):
@@ -450,6 +431,9 @@ class DomBot:
                 if not self.connect_to_dominio():
                     return False, "Não foi possível conectar ao Domínio Escrita Fiscal."
 
+                if not self.localizar_elementos_publicacao():
+                    return False, "Janela de Publicação de Documentos Externos não encontrada."
+
                 for empresa in os.listdir(diretorio):
                     # CHECKPOINT 3
                     if self.check_interrupted():
@@ -459,11 +443,11 @@ class DomBot:
                     if not os.path.isdir(caminho_empresa) or empresa == "Relatórios Fiscais":
                         continue
 
-                    numero_empresa = self.empresa_para_numero.get(empresa, "000")
-                    if numero_empresa == "000":
-                        self.log(f"AVISO: Código não encontrado para '{empresa}', usando '000'")
-                    else:
-                        self.log(f"Processando empresa: {empresa} (Código: {numero_empresa})")
+                    numero_empresa = self.resolver_codigo_empresa(empresa)
+                    if not numero_empresa:
+                        self.log(f"AVISO: Código não encontrado para '{empresa}', pulando.")
+                        continue
+                    self.log(f"Processando empresa: {empresa} (Código: {numero_empresa})")
 
                     for arquivo in os.listdir(caminho_empresa):
                         # CHECKPOINT 4
@@ -492,8 +476,8 @@ class DomBot:
                 elif arquivo_path.lower().endswith(".rar"):
                     self.extrair_rar(arquivo_path, diretorio_destino)
 
-                self.log("Renomeando pastas e extraindo códigos...")
-                self.renomear_pastas(diretorio_destino)
+                self.log("Extraindo códigos das pastas...")
+                self.empresa_para_numero = self.extrair_mapeamento_das_pastas(diretorio_destino)
 
                 if recompactar:
                     zip_saida = arquivo_path.replace(".rar", "_renomeado.zip").replace(".zip", "_renomeado.zip")
@@ -511,6 +495,9 @@ class DomBot:
                 if not self.connect_to_dominio():
                     return False, "Não foi possível conectar ao Domínio Escrita Fiscal."
 
+                if not self.localizar_elementos_publicacao():
+                    return False, "Janela de Publicação de Documentos Externos não encontrada."
+
                 for empresa in os.listdir(diretorio_destino):
                     # CHECKPOINT 6
                     if self.check_interrupted():
@@ -518,7 +505,10 @@ class DomBot:
 
                     caminho_empresa = os.path.join(diretorio_destino, empresa)
                     if os.path.isdir(caminho_empresa):
-                        numero_empresa = self.empresa_para_numero.get(empresa, "000")
+                        numero_empresa = self.resolver_codigo_empresa(empresa)
+                        if not numero_empresa:
+                            self.log(f"AVISO: Código não encontrado para '{empresa}', pulando.")
+                            continue
                         self.log(f"Processando empresa: {empresa} (Código: {numero_empresa})")
 
                         for arquivo in os.listdir(caminho_empresa):
@@ -720,15 +710,20 @@ class AppUI(ctk.CTk):
                 messagebox.showerror("Erro", "Pasta selecionada não existe.")
                 return
 
+            # Verifica fontes de mapeamento
             caminho_json = os.path.join(pasta, "mapeamento_empresas.json")
-            if not os.path.exists(caminho_json):
-                messagebox.showerror("Erro de Validação",
-                    "mapeamento_empresas.json não encontrado na pasta selecionada.")
-                self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Validação falhou: mapeamento_empresas.json ausente")
-                return
+            tem_json = os.path.exists(caminho_json)
+            empresas_com_codigo = 0
+            empresas_sem_codigo = []
 
             pdf_count = 0
             empresas_sem_pdf = []
+            mapeamento_json = {}
+
+            if tem_json:
+                with open(caminho_json, 'r', encoding='utf-8') as f:
+                    mapeamento_json = json.load(f)
+
             for empresa in os.listdir(pasta):
                 caminho = os.path.join(pasta, empresa)
                 if os.path.isdir(caminho) and empresa != "Relatórios Fiscais":
@@ -737,15 +732,31 @@ class AppUI(ctk.CTk):
                     if not pdfs:
                         empresas_sem_pdf.append(empresa)
 
-            with open(caminho_json, 'r', encoding='utf-8') as f:
-                mapeamento = json.load(f)
+                    # Verifica se tem código (JSON ou nome da pasta)
+                    if empresa in mapeamento_json or ' - ' in empresa:
+                        empresas_com_codigo += 1
+                    else:
+                        empresas_sem_codigo.append(empresa)
 
-            messagebox.showinfo("Validação",
-                f"Entrada válida!\n"
-                f"Empresas mapeadas: {len(mapeamento)}\n"
-                f"PDFs encontrados: {pdf_count}\n"
-                f"Pastas sem PDF: {len(empresas_sem_pdf)}")
-            self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Validação concluída: {pdf_count} PDFs, {len(mapeamento)} empresas mapeadas")
+            if empresas_com_codigo == 0:
+                messagebox.showerror("Erro de Validação",
+                    "Nenhuma empresa com código encontrada.\n"
+                    "Necessário: mapeamento_empresas.json ou pastas com padrão 'CÓDIGO - NOME'.")
+                self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Validação falhou: nenhum código de empresa encontrado")
+                return
+
+            fonte = "JSON" if tem_json else "nomes das pastas"
+            msg = (f"Entrada válida!\n"
+                   f"Fonte do mapeamento: {fonte}\n"
+                   f"Empresas com código: {empresas_com_codigo}\n"
+                   f"PDFs encontrados: {pdf_count}")
+            if empresas_sem_codigo:
+                msg += f"\nEmpresas SEM código (serão puladas): {len(empresas_sem_codigo)}"
+            if empresas_sem_pdf:
+                msg += f"\nPastas sem PDF: {len(empresas_sem_pdf)}"
+
+            messagebox.showinfo("Validação", msg)
+            self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Validação concluída: {pdf_count} PDFs, {empresas_com_codigo} empresas com código ({fonte})")
 
         else:
             arquivo = self.arquivo_zip_selecionado.get()
@@ -775,6 +786,8 @@ class AppUI(ctk.CTk):
 
         # Verifica se o Domínio está aberto
         try:
+            from pywinauto import findwindows
+            import win32gui
             all_windows = findwindows.find_windows()
             dominio_found = False
             for hwnd in all_windows:

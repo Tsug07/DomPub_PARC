@@ -1,0 +1,936 @@
+2026-02-13 09:08:48 - Iniciando processamento...
+2026-02-13 09:08:48 - Carregando mapeamento de empresas...
+2026-02-13 09:08:48 - Mapeamento JSON carregado: 66 empresas
+2026-02-13 09:08:48 - Total de PDFs encontrados: 314
+2026-02-13 09:08:48 - Procurando janela do Domínio Escrita Fiscal...
+2026-02-13 09:08:48 - Total de janelas abertas: 22
+2026-02-13 09:08:48 - Janela encontrada: 'Domínio Escrita Fiscal  - Versão: 10.6A-01 - 06'
+2026-02-13 09:08:48 - Janela do Domínio Escrita Fiscal localizada!
+2026-02-13 09:08:48 - Conectado ao Domínio Escrita Fiscal com sucesso
+2026-02-13 09:08:48 - Processando empresa: 1011 - MARCIO CHURRASCARIA LTDA (Código: 1011)
+2026-02-13 09:08:54 - --- Iniciando envio: 1011 - MARCIO CHURRASCARIA LTDA (Código: 1011) ---
+2026-02-13 09:09:12 - Campo 'Número Empresa' limpo com sucesso.
+2026-02-13 09:09:28 - Campo 'Onvio Processos' limpo com sucesso.
+2026-02-13 09:09:34 - Campo Onvio Processos preenchido: 0002_01.pdf
+2026-02-13 09:09:39 - Campo empresa preenchido: 1011
+2026-02-13 09:10:00 - Botão publicar clicado!
+2026-02-13 09:10:01 - Procurando janela de confirmação...
+2026-02-13 09:10:01 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:10:02 - Botão 'OK' clicado com sucesso
+2026-02-13 09:10:02 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0002_01.pdf
+2026-02-13 09:10:02 - [SUCESSO] PDF 1/314: 0002_01.pdf
+2026-02-13 09:10:14 - --- Iniciando envio: 1011 - MARCIO CHURRASCARIA LTDA (Código: 1011) ---
+2026-02-13 09:10:34 - Campo 'Número Empresa' limpo com sucesso.
+2026-02-13 09:10:53 - Campo 'Onvio Processos' limpo com sucesso.
+2026-02-13 09:10:57 - Campo Onvio Processos preenchido: 0002_03.pdf
+2026-02-13 09:11:02 - Campo empresa preenchido: 1011
+2026-02-13 09:11:13 - Botão publicar clicado!
+2026-02-13 09:11:14 - Procurando janela de confirmação...
+2026-02-13 09:11:14 - Processo interrompido pelo usuario
+2026-02-13 09:11:14 - [FALHA] PDF 2/314: 0002_03.pdf (Empresa: 1011 - MARCIO CHURRASCARIA LTDA, Código: 1011)
+2026-02-13 09:11:14 - Processo interrompido pelo usuario
+2026-02-13 09:11:14 - Processo interrompido pelo usuario
+2026-02-13 09:11:14 - Processo interrompido pelo usuario
+2026-02-13 09:11:14 - Interrompido! 1/2 documentos publicados.
+2026-02-13 09:24:02 - Iniciando processamento...
+2026-02-13 09:24:02 - Carregando mapeamento de empresas...
+2026-02-13 09:24:03 - Mapeamento JSON carregado: 66 empresas
+2026-02-13 09:24:03 - Total de PDFs encontrados: 314
+2026-02-13 09:24:03 - Procurando janela do Domínio Escrita Fiscal...
+2026-02-13 09:24:03 - Total de janelas abertas: 22
+2026-02-13 09:24:03 - Janela encontrada: 'Domínio Escrita Fiscal  - Versão: 10.6A-01 - 06'
+2026-02-13 09:24:03 - Janela do Domínio Escrita Fiscal localizada!
+2026-02-13 09:24:03 - Conectado ao Domínio Escrita Fiscal com sucesso
+2026-02-13 09:24:07 - Elementos da janela de publicação localizados.
+2026-02-13 09:24:07 - Processando empresa: 1011 - MARCIO CHURRASCARIA LTDA (Código: 1011)
+2026-02-13 09:24:27 - Procurando janela de confirmação...
+2026-02-13 09:24:27 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:24:27 - Botão 'OK' clicado com sucesso
+2026-02-13 09:24:27 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0002_01.pdf
+2026-02-13 09:24:47 - Procurando janela de confirmação...
+2026-02-13 09:24:47 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:24:47 - Botão 'OK' clicado com sucesso
+2026-02-13 09:24:47 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0002_03.pdf
+2026-02-13 09:25:08 - Procurando janela de confirmação...
+2026-02-13 09:25:08 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:25:08 - Botão 'OK' clicado com sucesso
+2026-02-13 09:25:09 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0003_02.pdf
+2026-02-13 09:25:37 - Procurando janela de confirmação...
+2026-02-13 09:25:37 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:25:38 - Botão 'OK' clicado com sucesso
+2026-02-13 09:25:38 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0003_04.pdf
+2026-02-13 09:25:38 - Processo interrompido pelo usuario
+2026-02-13 09:25:38 - Processo interrompido pelo usuario
+2026-02-13 09:25:38 - Processo interrompido pelo usuario
+2026-02-13 09:25:38 - Interrompido! 4/4 documentos publicados.
+2026-02-13 09:26:08 - Iniciando processamento...
+2026-02-13 09:26:08 - Carregando mapeamento de empresas...
+2026-02-13 09:26:08 - Mapeamento JSON carregado: 66 empresas
+2026-02-13 09:26:08 - Total de PDFs encontrados: 314
+2026-02-13 09:26:08 - Procurando janela do Domínio Escrita Fiscal...
+2026-02-13 09:26:08 - Total de janelas abertas: 22
+2026-02-13 09:26:08 - Janela encontrada: 'Domínio Escrita Fiscal  - Versão: 10.6A-01 - 06'
+2026-02-13 09:26:08 - Janela do Domínio Escrita Fiscal localizada!
+2026-02-13 09:26:08 - Conectado ao Domínio Escrita Fiscal com sucesso
+2026-02-13 09:26:12 - Elementos da janela de publicação localizados.
+2026-02-13 09:26:12 - Processando empresa: 1011 - MARCIO CHURRASCARIA LTDA (Código: 1011)
+2026-02-13 09:26:32 - Procurando janela de confirmação...
+2026-02-13 09:26:32 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:26:32 - Botão 'OK' clicado com sucesso
+2026-02-13 09:26:33 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0002_01.pdf
+2026-02-13 09:26:52 - Procurando janela de confirmação...
+2026-02-13 09:26:52 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:26:53 - Botão 'OK' clicado com sucesso
+2026-02-13 09:26:53 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0002_03.pdf
+2026-02-13 09:27:14 - Procurando janela de confirmação...
+2026-02-13 09:27:14 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:27:14 - Botão 'OK' clicado com sucesso
+2026-02-13 09:27:14 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0003_02.pdf
+2026-02-13 09:27:35 - Procurando janela de confirmação...
+2026-02-13 09:27:35 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:27:35 - Botão 'OK' clicado com sucesso
+2026-02-13 09:27:35 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 0003_04.pdf
+2026-02-13 09:27:55 - Procurando janela de confirmação...
+2026-02-13 09:27:55 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:27:55 - Botão 'OK' clicado com sucesso
+2026-02-13 09:27:56 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 01-2026_05.pdf
+2026-02-13 09:28:18 - Procurando janela de confirmação...
+2026-02-13 09:28:18 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:28:18 - Botão 'OK' clicado com sucesso
+2026-02-13 09:28:19 - Publicado - 1011 - MARCIO CHURRASCARIA LTDA | 1011 | 02-2026_06.pdf
+2026-02-13 09:28:19 - Processando empresa: 1013 - LILI SAPATARIA LTDA (Código: 1013)
+2026-02-13 09:28:39 - Procurando janela de confirmação...
+2026-02-13 09:28:39 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:28:39 - Botão 'OK' clicado com sucesso
+2026-02-13 09:28:40 - Publicado - 1013 - LILI SAPATARIA LTDA | 1013 | 01-2026_01.pdf
+2026-02-13 09:29:00 - Procurando janela de confirmação...
+2026-02-13 09:29:00 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:29:00 - Botão 'OK' clicado com sucesso
+2026-02-13 09:29:01 - Publicado - 1013 - LILI SAPATARIA LTDA | 1013 | 02-2026_02.pdf
+2026-02-13 09:29:01 - Processando empresa: 1015 - E M ROSA TEIXEIRA (Código: 1015)
+2026-02-13 09:29:24 - Procurando janela de confirmação...
+2026-02-13 09:29:24 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:29:24 - Botão 'OK' clicado com sucesso
+2026-02-13 09:29:24 - Publicado - 1015 - E M ROSA TEIXEIRA | 1015 | 02-2026_01.pdf
+2026-02-13 09:29:24 - Processando empresa: 102 - CANELLA  SANTOS CONTABILIDADE EIRELI (Código: 102)
+2026-02-13 09:29:46 - Procurando janela de confirmação...
+2026-02-13 09:29:46 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:29:46 - Botão 'OK' clicado com sucesso
+2026-02-13 09:29:46 - Publicado - 102 - CANELLA  SANTOS CONTABILIDADE EIRELI | 102 | 02-2026_01.pdf
+2026-02-13 09:29:46 - Processando empresa: 1021 - C S MATOS SILVA LTDA (Código: 1021)
+2026-02-13 09:30:06 - Procurando janela de confirmação...
+2026-02-13 09:30:06 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:30:06 - Botão 'OK' clicado com sucesso
+2026-02-13 09:30:06 - Publicado - 1021 - C S MATOS SILVA LTDA | 1021 | 0002_01.pdf
+2026-02-13 09:30:27 - Procurando janela de confirmação...
+2026-02-13 09:30:27 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:30:28 - Botão 'OK' clicado com sucesso
+2026-02-13 09:30:28 - Publicado - 1021 - C S MATOS SILVA LTDA | 1021 | 02-2026_02.pdf
+2026-02-13 09:30:28 - Processando empresa: 1035 - CLINICA MORIA LTDA (Código: 1035)
+2026-02-13 09:30:48 - Procurando janela de confirmação...
+2026-02-13 09:30:48 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:30:48 - Botão 'OK' clicado com sucesso
+2026-02-13 09:30:49 - Publicado - 1035 - CLINICA MORIA LTDA | 1035 | 01-2026_01.pdf
+2026-02-13 09:31:09 - Procurando janela de confirmação...
+2026-02-13 09:31:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:31:09 - Botão 'OK' clicado com sucesso
+2026-02-13 09:31:09 - Publicado - 1035 - CLINICA MORIA LTDA | 1035 | 02-2026_02.pdf
+2026-02-13 09:31:09 - Processando empresa: 1036 - BRUBER RESTAURANTE LTDA (Código: 1036)
+2026-02-13 09:31:31 - Procurando janela de confirmação...
+2026-02-13 09:31:31 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:31:31 - Botão 'OK' clicado com sucesso
+2026-02-13 09:31:31 - Publicado - 1036 - BRUBER RESTAURANTE LTDA | 1036 | 0003_01.pdf
+2026-02-13 09:31:31 - Processando empresa: 123 - VR INFLAVEIS PROMOCIONAIS LTDA (Código: 123)
+2026-02-13 09:31:52 - Procurando janela de confirmação...
+2026-02-13 09:31:52 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:31:52 - Botão 'OK' clicado com sucesso
+2026-02-13 09:31:53 - Publicado - 123 - VR INFLAVEIS PROMOCIONAIS LTDA | 123 | 02-2026_01.pdf
+2026-02-13 09:31:53 - Processando empresa: 140 - PIONEIRA ARTIGOS EVANGELICOS E CONFECCOES LTDA (Código: 140)
+2026-02-13 09:32:13 - Procurando janela de confirmação...
+2026-02-13 09:32:14 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:32:14 - Botão 'OK' clicado com sucesso
+2026-02-13 09:32:14 - Publicado - 140 - PIONEIRA ARTIGOS EVANGELICOS E CONFECCOES LTDA | 140 | 0092_01.pdf
+2026-02-13 09:32:34 - Procurando janela de confirmação...
+2026-02-13 09:32:34 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:32:34 - Botão 'OK' clicado com sucesso
+2026-02-13 09:32:35 - Publicado - 140 - PIONEIRA ARTIGOS EVANGELICOS E CONFECCOES LTDA | 140 | 02-2026_02.pdf
+2026-02-13 09:32:35 - Processando empresa: 145 - IGREJA EVANGELICA ASSEMBLEIA DE DEUS DO RETIRO (Código: 145)
+2026-02-13 09:32:55 - Procurando janela de confirmação...
+2026-02-13 09:32:55 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:32:55 - Botão 'OK' clicado com sucesso
+2026-02-13 09:32:56 - Publicado - 145 - IGREJA EVANGELICA ASSEMBLEIA DE DEUS DO RETIRO | 145 | 0018_01.pdf
+2026-02-13 09:32:56 - Processando empresa: 153 - GUSTAVO EUSTAQUIO BATISTA COMERCIO DE ROUPAS E ACESSORIOS (Código: 153)
+2026-02-13 09:33:18 - Procurando janela de confirmação...
+2026-02-13 09:33:18 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:33:18 - Botão 'OK' clicado com sucesso
+2026-02-13 09:33:18 - Publicado - 153 - GUSTAVO EUSTAQUIO BATISTA COMERCIO DE ROUPAS E ACESSORIOS | 153 | 0013_02.pdf
+2026-02-13 09:33:38 - Procurando janela de confirmação...
+2026-02-13 09:33:38 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:33:38 - Botão 'OK' clicado com sucesso
+2026-02-13 09:33:38 - Publicado - 153 - GUSTAVO EUSTAQUIO BATISTA COMERCIO DE ROUPAS E ACESSORIOS | 153 | 0014_01.pdf
+2026-02-13 09:33:59 - Procurando janela de confirmação...
+2026-02-13 09:33:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:33:59 - Botão 'OK' clicado com sucesso
+2026-02-13 09:34:00 - Publicado - 153 - GUSTAVO EUSTAQUIO BATISTA COMERCIO DE ROUPAS E ACESSORIOS | 153 | 0014_03.pdf
+2026-02-13 09:34:21 - Procurando janela de confirmação...
+2026-02-13 09:34:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:34:21 - Botão 'OK' clicado com sucesso
+2026-02-13 09:34:21 - Publicado - 153 - GUSTAVO EUSTAQUIO BATISTA COMERCIO DE ROUPAS E ACESSORIOS | 153 | 02-2026_04.pdf
+2026-02-13 09:34:21 - Processando empresa: 159 - STILUS LOCACAO DE EQUIPAMENTOS E CABINES SANITARIAS LTDA (Código: 159)
+2026-02-13 09:34:43 - Procurando janela de confirmação...
+2026-02-13 09:34:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:34:43 - Botão 'OK' clicado com sucesso
+2026-02-13 09:34:43 - Publicado - 159 - STILUS LOCACAO DE EQUIPAMENTOS E CABINES SANITARIAS LTDA | 159 | 02-2026_01.pdf
+2026-02-13 09:34:43 - Processando empresa: 197 - R V CICLO AUTOMACAO EIRELI (Código: 197)
+2026-02-13 09:35:02 - Procurando janela de confirmação...
+2026-02-13 09:35:02 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:35:02 - Botão 'OK' clicado com sucesso
+2026-02-13 09:35:03 - Publicado - 197 - R V CICLO AUTOMACAO EIRELI | 197 | 0026_01.pdf
+2026-02-13 09:35:03 - Processando empresa: 214 - E B VIEIRA SCHNEIDER W VIANNA DECORACAO EM GERAL (Código: 214)
+2026-02-13 09:35:23 - Procurando janela de confirmação...
+2026-02-13 09:35:23 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:35:23 - Botão 'OK' clicado com sucesso
+2026-02-13 09:35:23 - Publicado - 214 - E B VIEIRA SCHNEIDER W VIANNA DECORACAO EM GERAL | 214 | 01-2026_01.pdf
+2026-02-13 09:35:42 - Procurando janela de confirmação...
+2026-02-13 09:35:42 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:35:42 - Botão 'OK' clicado com sucesso
+2026-02-13 09:35:43 - Publicado - 214 - E B VIEIRA SCHNEIDER W VIANNA DECORACAO EM GERAL | 214 | 02-2026_02.pdf
+2026-02-13 09:35:43 - Processando empresa: 229 - H F ROCHA COMERCIO DE VEICULOS (Código: 229)
+2026-02-13 09:36:05 - Procurando janela de confirmação...
+2026-02-13 09:36:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:36:05 - Botão 'OK' clicado com sucesso
+2026-02-13 09:36:05 - Publicado - 229 - H F ROCHA COMERCIO DE VEICULOS | 229 | 0007_01.pdf
+2026-02-13 09:36:05 - Processando empresa: 232 - G R DISTRIBUIDORA EM GERAL EIRELI (Código: 232)
+2026-02-13 09:36:25 - Procurando janela de confirmação...
+2026-02-13 09:36:25 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:36:25 - Botão 'OK' clicado com sucesso
+2026-02-13 09:36:25 - Publicado - 232 - G R DISTRIBUIDORA EM GERAL EIRELI | 232 | 0021_01.pdf
+2026-02-13 09:36:45 - Procurando janela de confirmação...
+2026-02-13 09:36:46 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:36:46 - Botão 'OK' clicado com sucesso
+2026-02-13 09:36:46 - Publicado - 232 - G R DISTRIBUIDORA EM GERAL EIRELI | 232 | 0022_02.pdf
+2026-02-13 09:37:07 - Procurando janela de confirmação...
+2026-02-13 09:37:07 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:37:07 - Botão 'OK' clicado com sucesso
+2026-02-13 09:37:07 - Publicado - 232 - G R DISTRIBUIDORA EM GERAL EIRELI | 232 | 0023_03.pdf
+2026-02-13 09:37:29 - Procurando janela de confirmação...
+2026-02-13 09:37:29 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:37:29 - Botão 'OK' clicado com sucesso
+2026-02-13 09:37:29 - Publicado - 232 - G R DISTRIBUIDORA EM GERAL EIRELI | 232 | 01-2026_04.pdf
+2026-02-13 09:37:50 - Procurando janela de confirmação...
+2026-02-13 09:37:50 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:37:50 - Botão 'OK' clicado com sucesso
+2026-02-13 09:37:50 - Publicado - 232 - G R DISTRIBUIDORA EM GERAL EIRELI | 232 | 02-2026_05.pdf
+2026-02-13 09:37:50 - Processando empresa: 24 - JOFEL CALCADOS LTDA (Código: 24)
+2026-02-13 09:38:10 - Procurando janela de confirmação...
+2026-02-13 09:38:10 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:38:11 - Botão 'OK' clicado com sucesso
+2026-02-13 09:38:11 - Publicado - 24 - JOFEL CALCADOS LTDA | 24 | 0008_01.pdf
+2026-02-13 09:38:30 - Procurando janela de confirmação...
+2026-02-13 09:38:31 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:38:31 - Botão 'OK' clicado com sucesso
+2026-02-13 09:38:31 - Publicado - 24 - JOFEL CALCADOS LTDA | 24 | 01-2026_02.pdf
+2026-02-13 09:38:52 - Procurando janela de confirmação...
+2026-02-13 09:38:52 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:38:52 - Botão 'OK' clicado com sucesso
+2026-02-13 09:38:52 - Publicado - 24 - JOFEL CALCADOS LTDA | 24 | 02-2026_03.pdf
+2026-02-13 09:38:52 - Processando empresa: 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI (Código: 25)
+2026-02-13 09:39:13 - Procurando janela de confirmação...
+2026-02-13 09:39:13 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:39:13 - Botão 'OK' clicado com sucesso
+2026-02-13 09:39:13 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0004_14.pdf
+2026-02-13 09:39:32 - Procurando janela de confirmação...
+2026-02-13 09:39:33 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:39:33 - Botão 'OK' clicado com sucesso
+2026-02-13 09:39:33 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0005_15.pdf
+2026-02-13 09:39:52 - Procurando janela de confirmação...
+2026-02-13 09:39:53 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:39:53 - Botão 'OK' clicado com sucesso
+2026-02-13 09:39:53 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0006_16.pdf
+2026-02-13 09:40:14 - Procurando janela de confirmação...
+2026-02-13 09:40:14 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:40:14 - Botão 'OK' clicado com sucesso
+2026-02-13 09:40:15 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0007_08.pdf
+2026-02-13 09:40:34 - Procurando janela de confirmação...
+2026-02-13 09:40:34 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:40:34 - Botão 'OK' clicado com sucesso
+2026-02-13 09:40:35 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0008_09.pdf
+2026-02-13 09:40:54 - Procurando janela de confirmação...
+2026-02-13 09:40:54 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:40:54 - Botão 'OK' clicado com sucesso
+2026-02-13 09:40:55 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0009_10.pdf
+2026-02-13 09:41:15 - Procurando janela de confirmação...
+2026-02-13 09:41:15 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:41:15 - Botão 'OK' clicado com sucesso
+2026-02-13 09:41:16 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0014_11.pdf
+2026-02-13 09:41:37 - Procurando janela de confirmação...
+2026-02-13 09:41:37 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:41:37 - Botão 'OK' clicado com sucesso
+2026-02-13 09:41:37 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0015_12.pdf
+2026-02-13 09:41:58 - Procurando janela de confirmação...
+2026-02-13 09:41:58 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:41:58 - Botão 'OK' clicado com sucesso
+2026-02-13 09:41:58 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0016_13.pdf
+2026-02-13 09:42:20 - Procurando janela de confirmação...
+2026-02-13 09:42:20 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:42:20 - Botão 'OK' clicado com sucesso
+2026-02-13 09:42:21 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0026_05.pdf
+2026-02-13 09:42:40 - Procurando janela de confirmação...
+2026-02-13 09:42:40 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:42:40 - Botão 'OK' clicado com sucesso
+2026-02-13 09:42:41 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0027_06.pdf
+2026-02-13 09:43:05 - Procurando janela de confirmação...
+2026-02-13 09:43:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:43:05 - Botão 'OK' clicado com sucesso
+2026-02-13 09:43:06 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0028_07.pdf
+2026-02-13 09:43:26 - Procurando janela de confirmação...
+2026-02-13 09:43:26 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:43:26 - Botão 'OK' clicado com sucesso
+2026-02-13 09:43:26 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0042_04.pdf
+2026-02-13 09:43:45 - Procurando janela de confirmação...
+2026-02-13 09:43:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:43:45 - Botão 'OK' clicado com sucesso
+2026-02-13 09:43:46 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0045_01.pdf
+2026-02-13 09:44:05 - Procurando janela de confirmação...
+2026-02-13 09:44:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:44:05 - Botão 'OK' clicado com sucesso
+2026-02-13 09:44:06 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0046_02.pdf
+2026-02-13 09:44:26 - Procurando janela de confirmação...
+2026-02-13 09:44:26 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:44:26 - Botão 'OK' clicado com sucesso
+2026-02-13 09:44:26 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0047_03.pdf
+2026-02-13 09:44:47 - Procurando janela de confirmação...
+2026-02-13 09:44:47 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:44:47 - Botão 'OK' clicado com sucesso
+2026-02-13 09:44:47 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0048_17.pdf
+2026-02-13 09:45:12 - Procurando janela de confirmação...
+2026-02-13 09:45:12 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:45:12 - Botão 'OK' clicado com sucesso
+2026-02-13 09:45:12 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0049_18.pdf
+2026-02-13 09:45:36 - Procurando janela de confirmação...
+2026-02-13 09:45:36 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:45:36 - Botão 'OK' clicado com sucesso
+2026-02-13 09:45:36 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 0050_19.pdf
+2026-02-13 09:46:06 - Procurando janela de confirmação...
+2026-02-13 09:46:06 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:46:06 - Botão 'OK' clicado com sucesso
+2026-02-13 09:46:06 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 01-2026_20.pdf
+2026-02-13 09:46:30 - Procurando janela de confirmação...
+2026-02-13 09:46:30 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:46:30 - Botão 'OK' clicado com sucesso
+2026-02-13 09:46:30 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 01-2026_22.pdf
+2026-02-13 09:46:54 - Procurando janela de confirmação...
+2026-02-13 09:46:54 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:46:54 - Botão 'OK' clicado com sucesso
+2026-02-13 09:46:55 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 02-2026_21.pdf
+2026-02-13 09:47:19 - Procurando janela de confirmação...
+2026-02-13 09:47:19 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:47:19 - Botão 'OK' clicado com sucesso
+2026-02-13 09:47:19 - Publicado - 25 - GELOARTE DE VOLTA REDONDA DISTRIBUIDORA EIRELI | 25 | 02-2026_23.pdf
+2026-02-13 09:47:19 - Processando empresa: 255 - SANTO AGOSTINHO CALCADOS LTDA (Código: 255)
+2026-02-13 09:47:45 - Procurando janela de confirmação...
+2026-02-13 09:47:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:47:45 - Botão 'OK' clicado com sucesso
+2026-02-13 09:47:45 - Publicado - 255 - SANTO AGOSTINHO CALCADOS LTDA | 255 | 0045_01.pdf
+2026-02-13 09:47:45 - Processando empresa: 321 - L H RODRIGUES E LOPES MARCENARIA LTDA (Código: 321)
+2026-02-13 09:48:09 - Procurando janela de confirmação...
+2026-02-13 09:48:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:48:09 - Botão 'OK' clicado com sucesso
+2026-02-13 09:48:09 - Publicado - 321 - L H RODRIGUES E LOPES MARCENARIA LTDA | 321 | 01-2026_01.pdf
+2026-02-13 09:48:33 - Procurando janela de confirmação...
+2026-02-13 09:48:33 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:48:33 - Botão 'OK' clicado com sucesso
+2026-02-13 09:48:34 - Publicado - 321 - L H RODRIGUES E LOPES MARCENARIA LTDA | 321 | 02-2026_02.pdf
+2026-02-13 09:48:34 - Processando empresa: 363 - ALMICO E HIME REPRESENTACOES LTDA (Código: 363)
+2026-02-13 09:48:56 - Procurando janela de confirmação...
+2026-02-13 09:48:56 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:48:56 - Botão 'OK' clicado com sucesso
+2026-02-13 09:48:57 - Publicado - 363 - ALMICO E HIME REPRESENTACOES LTDA | 363 | 0048_01.pdf
+2026-02-13 09:49:16 - Procurando janela de confirmação...
+2026-02-13 09:49:16 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:49:16 - Botão 'OK' clicado com sucesso
+2026-02-13 09:49:16 - Publicado - 363 - ALMICO E HIME REPRESENTACOES LTDA | 363 | 0049_02.pdf
+2026-02-13 09:49:38 - Procurando janela de confirmação...
+2026-02-13 09:49:38 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:49:38 - Botão 'OK' clicado com sucesso
+2026-02-13 09:49:38 - Publicado - 363 - ALMICO E HIME REPRESENTACOES LTDA | 363 | 0050_03.pdf
+2026-02-13 09:49:38 - Processando empresa: 417 - INVICTTA SERVICOS INTELIGENTES LIMITADA (Código: 417)
+2026-02-13 09:49:59 - Procurando janela de confirmação...
+2026-02-13 09:49:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:49:59 - Botão 'OK' clicado com sucesso
+2026-02-13 09:49:59 - Publicado - 417 - INVICTTA SERVICOS INTELIGENTES LIMITADA | 417 | 02-2026_01.pdf
+2026-02-13 09:49:59 - Processando empresa: 43 - R F M MOROZINI COMERCIO (Código: 43)
+2026-02-13 09:50:18 - Procurando janela de confirmação...
+2026-02-13 09:50:18 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:50:18 - Botão 'OK' clicado com sucesso
+2026-02-13 09:50:19 - Publicado - 43 - R F M MOROZINI COMERCIO | 43 | 0092_01.pdf
+2026-02-13 09:50:19 - Processando empresa: 440 - SAVIO GAMA CALCADOS EIRELI (Código: 440)
+2026-02-13 09:50:43 - Procurando janela de confirmação...
+2026-02-13 09:50:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:50:43 - Botão 'OK' clicado com sucesso
+2026-02-13 09:50:43 - Publicado - 440 - SAVIO GAMA CALCADOS EIRELI | 440 | 0004_01.pdf
+2026-02-13 09:51:04 - Procurando janela de confirmação...
+2026-02-13 09:51:04 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:51:04 - Botão 'OK' clicado com sucesso
+2026-02-13 09:51:04 - Publicado - 440 - SAVIO GAMA CALCADOS EIRELI | 440 | 0004_02.pdf
+2026-02-13 09:51:23 - Procurando janela de confirmação...
+2026-02-13 09:51:23 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:51:24 - Botão 'OK' clicado com sucesso
+2026-02-13 09:51:24 - Publicado - 440 - SAVIO GAMA CALCADOS EIRELI | 440 | 0054_03.pdf
+2026-02-13 09:51:42 - Procurando janela de confirmação...
+2026-02-13 09:51:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:51:43 - Botão 'OK' clicado com sucesso
+2026-02-13 09:51:44 - Publicado - 440 - SAVIO GAMA CALCADOS EIRELI | 440 | 02-2026_04.pdf
+2026-02-13 09:52:05 - Procurando janela de confirmação...
+2026-02-13 09:52:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:52:05 - Botão 'OK' clicado com sucesso
+2026-02-13 09:52:06 - Publicado - 440 - SAVIO GAMA CALCADOS EIRELI | 440 | 02-2026_05.pdf
+2026-02-13 09:52:06 - Processando empresa: 46 - LUMAR CALCADOS LTDA (Código: 46)
+2026-02-13 09:52:25 - Procurando janela de confirmação...
+2026-02-13 09:52:25 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:52:25 - Botão 'OK' clicado com sucesso
+2026-02-13 09:52:25 - Publicado - 46 - LUMAR CALCADOS LTDA | 46 | 01-2026_01.pdf
+2026-02-13 09:52:45 - Procurando janela de confirmação...
+2026-02-13 09:52:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:52:45 - Botão 'OK' clicado com sucesso
+2026-02-13 09:52:45 - Publicado - 46 - LUMAR CALCADOS LTDA | 46 | 02-2026_02.pdf
+2026-02-13 09:52:45 - Processando empresa: 483 - CRIAT PROJETOS E SERVICOS LTDA (Código: 483)
+2026-02-13 09:53:05 - Procurando janela de confirmação...
+2026-02-13 09:53:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:53:05 - Botão 'OK' clicado com sucesso
+2026-02-13 09:53:05 - Publicado - 483 - CRIAT PROJETOS E SERVICOS LTDA | 483 | 0015_02.pdf
+2026-02-13 09:53:23 - Procurando janela de confirmação...
+2026-02-13 09:53:23 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:53:23 - Botão 'OK' clicado com sucesso
+2026-02-13 09:53:24 - Publicado - 483 - CRIAT PROJETOS E SERVICOS LTDA | 483 | 0025_01.pdf
+2026-02-13 09:53:43 - Procurando janela de confirmação...
+2026-02-13 09:53:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:53:43 - Botão 'OK' clicado com sucesso
+2026-02-13 09:53:43 - Publicado - 483 - CRIAT PROJETOS E SERVICOS LTDA | 483 | 0060_03.pdf
+2026-02-13 09:54:02 - Procurando janela de confirmação...
+2026-02-13 09:54:02 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:54:02 - Botão 'OK' clicado com sucesso
+2026-02-13 09:54:02 - Publicado - 483 - CRIAT PROJETOS E SERVICOS LTDA | 483 | 0060_04.pdf
+2026-02-13 09:54:02 - Processando empresa: 484 - CRECHE ESCOLA JARDIM GIRASSOL LTDA (Código: 484)
+2026-02-13 09:54:21 - Procurando janela de confirmação...
+2026-02-13 09:54:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:54:21 - Botão 'OK' clicado com sucesso
+2026-02-13 09:54:22 - Publicado - 484 - CRECHE ESCOLA JARDIM GIRASSOL LTDA | 484 | 0030_01.pdf
+2026-02-13 09:54:41 - Procurando janela de confirmação...
+2026-02-13 09:54:41 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:54:41 - Botão 'OK' clicado com sucesso
+2026-02-13 09:54:41 - Publicado - 484 - CRECHE ESCOLA JARDIM GIRASSOL LTDA | 484 | 0050_02.pdf
+2026-02-13 09:54:41 - Processando empresa: 510 - MEGA BOX SHOP LTDA (Código: 510)
+2026-02-13 09:54:59 - Procurando janela de confirmação...
+2026-02-13 09:54:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:55:00 - Botão 'OK' clicado com sucesso
+2026-02-13 09:55:00 - Publicado - 510 - MEGA BOX SHOP LTDA | 510 | 02-2026_01.pdf
+2026-02-13 09:55:00 - Processando empresa: 517 - LOCARJET LOCACOES LTDA (Código: 517)
+2026-02-13 09:55:21 - Procurando janela de confirmação...
+2026-02-13 09:55:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:55:21 - Botão 'OK' clicado com sucesso
+2026-02-13 09:55:21 - Publicado - 517 - LOCARJET LOCACOES LTDA | 517 | 02-2026_01.pdf
+2026-02-13 09:55:21 - Processando empresa: 522 - T F BARBOSA VIEIRA SERVICOS DE ENGENHARIA (Código: 522)
+2026-02-13 09:55:40 - Procurando janela de confirmação...
+2026-02-13 09:55:40 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:55:40 - Botão 'OK' clicado com sucesso
+2026-02-13 09:55:41 - Publicado - 522 - T F BARBOSA VIEIRA SERVICOS DE ENGENHARIA | 522 | 0003_01.pdf
+2026-02-13 09:55:59 - Procurando janela de confirmação...
+2026-02-13 09:55:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:55:59 - Botão 'OK' clicado com sucesso
+2026-02-13 09:55:59 - Publicado - 522 - T F BARBOSA VIEIRA SERVICOS DE ENGENHARIA | 522 | 02-2026_02.pdf
+2026-02-13 09:55:59 - Processando empresa: 529 - PRECIOSO CHOCOLATE FORTINI EIRELI (Código: 529)
+2026-02-13 09:56:18 - Procurando janela de confirmação...
+2026-02-13 09:56:18 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:56:18 - Botão 'OK' clicado com sucesso
+2026-02-13 09:56:18 - Publicado - 529 - PRECIOSO CHOCOLATE FORTINI EIRELI | 529 | 01-2026_01.pdf
+2026-02-13 09:56:37 - Procurando janela de confirmação...
+2026-02-13 09:56:37 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:56:38 - Botão 'OK' clicado com sucesso
+2026-02-13 09:56:38 - Publicado - 529 - PRECIOSO CHOCOLATE FORTINI EIRELI | 529 | 02-2026_02.pdf
+2026-02-13 09:56:38 - Processando empresa: 55 - RADIO ENERGIA LTDA (Código: 55)
+2026-02-13 09:56:57 - Procurando janela de confirmação...
+2026-02-13 09:56:57 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:56:57 - Botão 'OK' clicado com sucesso
+2026-02-13 09:56:57 - Publicado - 55 - RADIO ENERGIA LTDA | 55 | 0005_03.pdf
+2026-02-13 09:57:15 - Procurando janela de confirmação...
+2026-02-13 09:57:15 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:57:15 - Botão 'OK' clicado com sucesso
+2026-02-13 09:57:16 - Publicado - 55 - RADIO ENERGIA LTDA | 55 | 0005_04.pdf
+2026-02-13 09:57:34 - Procurando janela de confirmação...
+2026-02-13 09:57:34 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:57:34 - Botão 'OK' clicado com sucesso
+2026-02-13 09:57:34 - Publicado - 55 - RADIO ENERGIA LTDA | 55 | 0098_02.pdf
+2026-02-13 09:57:53 - Procurando janela de confirmação...
+2026-02-13 09:57:53 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:57:53 - Botão 'OK' clicado com sucesso
+2026-02-13 09:57:54 - Publicado - 55 - RADIO ENERGIA LTDA | 55 | 0103_01.pdf
+2026-02-13 09:58:13 - Procurando janela de confirmação...
+2026-02-13 09:58:13 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:58:13 - Botão 'OK' clicado com sucesso
+2026-02-13 09:58:13 - Publicado - 55 - RADIO ENERGIA LTDA | 55 | 02-2026_05.pdf
+2026-02-13 09:58:13 - Processando empresa: 551 - J C MACHADO DE SOUZA (Código: 551)
+2026-02-13 09:58:32 - Procurando janela de confirmação...
+2026-02-13 09:58:32 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:58:32 - Botão 'OK' clicado com sucesso
+2026-02-13 09:58:32 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0002_01.pdf
+2026-02-13 09:58:50 - Procurando janela de confirmação...
+2026-02-13 09:58:50 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:58:50 - Botão 'OK' clicado com sucesso
+2026-02-13 09:58:51 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0003_02.pdf
+2026-02-13 09:59:16 - Procurando janela de confirmação...
+2026-02-13 09:59:16 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:59:16 - Botão 'OK' clicado com sucesso
+2026-02-13 09:59:17 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0004_03.pdf
+2026-02-13 09:59:37 - Procurando janela de confirmação...
+2026-02-13 09:59:37 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:59:37 - Botão 'OK' clicado com sucesso
+2026-02-13 09:59:37 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0005_04.pdf
+2026-02-13 09:59:57 - Procurando janela de confirmação...
+2026-02-13 09:59:57 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 09:59:57 - Botão 'OK' clicado com sucesso
+2026-02-13 09:59:57 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0007_05.pdf
+2026-02-13 10:00:17 - Procurando janela de confirmação...
+2026-02-13 10:00:17 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:00:17 - Botão 'OK' clicado com sucesso
+2026-02-13 10:00:17 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0008_06.pdf
+2026-02-13 10:00:37 - Procurando janela de confirmação...
+2026-02-13 10:00:37 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:00:37 - Botão 'OK' clicado com sucesso
+2026-02-13 10:00:38 - Publicado - 551 - J C MACHADO DE SOUZA | 551 | 0009_07.pdf
+2026-02-13 10:00:38 - Processando empresa: 562 - COMPLEXO PAISAGISTICO PARAISO DAS PALMEIRAS LTDA (Código: 562)
+2026-02-13 10:00:57 - Procurando janela de confirmação...
+2026-02-13 10:00:58 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:00:58 - Botão 'OK' clicado com sucesso
+2026-02-13 10:00:58 - Publicado - 562 - COMPLEXO PAISAGISTICO PARAISO DAS PALMEIRAS LTDA | 562 | 0002_01.pdf
+2026-02-13 10:01:18 - Procurando janela de confirmação...
+2026-02-13 10:01:18 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:01:18 - Botão 'OK' clicado com sucesso
+2026-02-13 10:01:19 - Publicado - 562 - COMPLEXO PAISAGISTICO PARAISO DAS PALMEIRAS LTDA | 562 | 0003_02.pdf
+2026-02-13 10:01:38 - Procurando janela de confirmação...
+2026-02-13 10:01:38 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:01:38 - Botão 'OK' clicado com sucesso
+2026-02-13 10:01:38 - Publicado - 562 - COMPLEXO PAISAGISTICO PARAISO DAS PALMEIRAS LTDA | 562 | 01-2026_03.pdf
+2026-02-13 10:01:59 - Procurando janela de confirmação...
+2026-02-13 10:02:00 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:02:00 - Botão 'OK' clicado com sucesso
+2026-02-13 10:02:00 - Publicado - 562 - COMPLEXO PAISAGISTICO PARAISO DAS PALMEIRAS LTDA | 562 | 02-2026_04.pdf
+2026-02-13 10:02:00 - Processando empresa: 588 - I BRUM COMERCIO DE VEICULOS (Código: 588)
+2026-02-13 10:02:20 - Procurando janela de confirmação...
+2026-02-13 10:02:20 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:02:20 - Botão 'OK' clicado com sucesso
+2026-02-13 10:02:20 - Publicado - 588 - I BRUM COMERCIO DE VEICULOS | 588 | 0004_01.pdf
+2026-02-13 10:02:20 - Processando empresa: 642 - COMERCIAL SARAH LTDA (Código: 642)
+2026-02-13 10:02:42 - Procurando janela de confirmação...
+2026-02-13 10:02:42 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:02:42 - Botão 'OK' clicado com sucesso
+2026-02-13 10:02:43 - Publicado - 642 - COMERCIAL SARAH LTDA | 642 | 01-2026_01.pdf
+2026-02-13 10:03:05 - Procurando janela de confirmação...
+2026-02-13 10:03:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:03:05 - Botão 'OK' clicado com sucesso
+2026-02-13 10:03:05 - Publicado - 642 - COMERCIAL SARAH LTDA | 642 | 02-2026_02.pdf
+2026-02-13 10:03:05 - Processando empresa: 655 - MARVIN PEIXARIA LTDA (Código: 655)
+2026-02-13 10:03:26 - Procurando janela de confirmação...
+2026-02-13 10:03:26 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:03:26 - Botão 'OK' clicado com sucesso
+2026-02-13 10:03:26 - Publicado - 655 - MARVIN PEIXARIA LTDA | 655 | 0056_01.pdf
+2026-02-13 10:03:47 - Procurando janela de confirmação...
+2026-02-13 10:03:47 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:03:47 - Botão 'OK' clicado com sucesso
+2026-02-13 10:03:48 - Publicado - 655 - MARVIN PEIXARIA LTDA | 655 | 02-2026_02.pdf
+2026-02-13 10:03:48 - Processando empresa: 663 - INSPIRE-SE SERVICOS DE ORGANIZACAO FEIRAS EVENTOS COMPUTADORES MAQUINAS TREINAMENTOS PESSOAL S (Código: 663)
+2026-02-13 10:04:09 - Procurando janela de confirmação...
+2026-02-13 10:04:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:04:09 - Botão 'OK' clicado com sucesso
+2026-02-13 10:04:10 - Publicado - 663 - INSPIRE-SE SERVICOS DE ORGANIZACAO FEIRAS EVENTOS COMPUTADORES MAQUINAS TREINAMENTOS PESSOAL S | 663 | 02-2026_01.pdf
+2026-02-13 10:04:10 - Processando empresa: 674 - CASA CONEXAO LTDA (Código: 674)
+2026-02-13 10:04:30 - Procurando janela de confirmação...
+2026-02-13 10:04:30 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:04:30 - Botão 'OK' clicado com sucesso
+2026-02-13 10:04:31 - Publicado - 674 - CASA CONEXAO LTDA | 674 | 02-2026_01.pdf
+2026-02-13 10:04:31 - Processando empresa: 689 - NOVA PRATICA SERVICOS LTDA (Código: 689)
+2026-02-13 10:04:52 - Procurando janela de confirmação...
+2026-02-13 10:04:52 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:04:52 - Botão 'OK' clicado com sucesso
+2026-02-13 10:04:53 - Publicado - 689 - NOVA PRATICA SERVICOS LTDA | 689 | 0002_01.pdf
+2026-02-13 10:05:18 - Procurando janela de confirmação...
+2026-02-13 10:05:19 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:05:19 - Botão 'OK' clicado com sucesso
+2026-02-13 10:05:19 - Publicado - 689 - NOVA PRATICA SERVICOS LTDA | 689 | 0003_02.pdf
+2026-02-13 10:05:44 - Procurando janela de confirmação...
+2026-02-13 10:05:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:05:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:05:45 - Publicado - 689 - NOVA PRATICA SERVICOS LTDA | 689 | 02-2026_03.pdf
+2026-02-13 10:05:45 - Processando empresa: 69 - FB INFLAVEIS PROMOCIONAIS LTDA (Código: 69)
+2026-02-13 10:06:07 - Procurando janela de confirmação...
+2026-02-13 10:06:07 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:06:08 - Botão 'OK' clicado com sucesso
+2026-02-13 10:06:08 - Publicado - 69 - FB INFLAVEIS PROMOCIONAIS LTDA | 69 | 0093_01.pdf
+2026-02-13 10:06:31 - Procurando janela de confirmação...
+2026-02-13 10:06:31 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:06:31 - Botão 'OK' clicado com sucesso
+2026-02-13 10:06:31 - Publicado - 69 - FB INFLAVEIS PROMOCIONAIS LTDA | 69 | 02-2026_02.pdf
+2026-02-13 10:06:31 - Processando empresa: 699 - CAMILA P PIRES MICANGAS E ARTES LTDA (Código: 699)
+2026-02-13 10:06:54 - Procurando janela de confirmação...
+2026-02-13 10:06:54 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:06:54 - Botão 'OK' clicado com sucesso
+2026-02-13 10:06:55 - Publicado - 699 - CAMILA P PIRES MICANGAS E ARTES LTDA | 699 | 0015_01.pdf
+2026-02-13 10:07:20 - Procurando janela de confirmação...
+2026-02-13 10:07:20 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:07:20 - Botão 'OK' clicado com sucesso
+2026-02-13 10:07:21 - Publicado - 699 - CAMILA P PIRES MICANGAS E ARTES LTDA | 699 | 02-2026_02.pdf
+2026-02-13 10:07:21 - Processando empresa: 701 - AGMIX CORRETORA DE SEGUROS LTDA (Código: 701)
+2026-02-13 10:07:45 - Procurando janela de confirmação...
+2026-02-13 10:07:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:07:45 - Botão 'OK' clicado com sucesso
+2026-02-13 10:07:45 - Publicado - 701 - AGMIX CORRETORA DE SEGUROS LTDA | 701 | 02-2026_01.pdf
+2026-02-13 10:07:45 - Processando empresa: 717 - LOPES DE OLIVEIRA SOCIEDADE INDIVIDUAL DE ADVOCACIA (Código: 717)
+2026-02-13 10:08:09 - Procurando janela de confirmação...
+2026-02-13 10:08:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:08:09 - Botão 'OK' clicado com sucesso
+2026-02-13 10:08:09 - Publicado - 717 - LOPES DE OLIVEIRA SOCIEDADE INDIVIDUAL DE ADVOCACIA | 717 | 0017_01.pdf
+2026-02-13 10:08:09 - Processando empresa: 752 - REI DO SALGADO VOLTA REDONDA LTDA (Código: 752)
+2026-02-13 10:08:33 - Procurando janela de confirmação...
+2026-02-13 10:08:33 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:08:34 - Botão 'OK' clicado com sucesso
+2026-02-13 10:08:34 - Publicado - 752 - REI DO SALGADO VOLTA REDONDA LTDA | 752 | 02-2026_01.pdf
+2026-02-13 10:08:34 - Processando empresa: 753 - OMEGA DE VOLTA REDONDA COMERCIO DE MATERIAIS DE CONSTRUCAO LTDA (Código: 753)
+2026-02-13 10:08:58 - Procurando janela de confirmação...
+2026-02-13 10:08:58 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:08:58 - Botão 'OK' clicado com sucesso
+2026-02-13 10:09:00 - Publicado - 753 - OMEGA DE VOLTA REDONDA COMERCIO DE MATERIAIS DE CONSTRUCAO LTDA | 753 | 02-2026_01.pdf
+2026-02-13 10:09:21 - Procurando janela de confirmação...
+2026-02-13 10:09:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:09:21 - Botão 'OK' clicado com sucesso
+2026-02-13 10:09:21 - Publicado - 753 - OMEGA DE VOLTA REDONDA COMERCIO DE MATERIAIS DE CONSTRUCAO LTDA | 753 | 02-2026_02.pdf
+2026-02-13 10:09:21 - Processando empresa: 757 - JCJ DROGARIA LTDA (Código: 757)
+2026-02-13 10:09:43 - Procurando janela de confirmação...
+2026-02-13 10:09:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:09:43 - Botão 'OK' clicado com sucesso
+2026-02-13 10:09:43 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0003_05.pdf
+2026-02-13 10:10:04 - Procurando janela de confirmação...
+2026-02-13 10:10:07 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:10:07 - Botão 'OK' clicado com sucesso
+2026-02-13 10:10:07 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0004_06.pdf
+2026-02-13 10:10:32 - Procurando janela de confirmação...
+2026-02-13 10:10:32 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:10:32 - Botão 'OK' clicado com sucesso
+2026-02-13 10:10:32 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0005_07.pdf
+2026-02-13 10:10:56 - Procurando janela de confirmação...
+2026-02-13 10:10:56 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:10:56 - Botão 'OK' clicado com sucesso
+2026-02-13 10:10:57 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0006_08.pdf
+2026-02-13 10:11:20 - Procurando janela de confirmação...
+2026-02-13 10:11:20 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:11:21 - Botão 'OK' clicado com sucesso
+2026-02-13 10:11:21 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0007_09.pdf
+2026-02-13 10:11:46 - Procurando janela de confirmação...
+2026-02-13 10:11:46 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:11:46 - Botão 'OK' clicado com sucesso
+2026-02-13 10:11:46 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0009_01.pdf
+2026-02-13 10:12:09 - Procurando janela de confirmação...
+2026-02-13 10:12:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:12:09 - Botão 'OK' clicado com sucesso
+2026-02-13 10:12:09 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0010_02.pdf
+2026-02-13 10:12:32 - Procurando janela de confirmação...
+2026-02-13 10:12:32 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:12:32 - Botão 'OK' clicado com sucesso
+2026-02-13 10:12:32 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0011_03.pdf
+2026-02-13 10:12:56 - Procurando janela de confirmação...
+2026-02-13 10:12:56 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:12:56 - Botão 'OK' clicado com sucesso
+2026-02-13 10:12:56 - Publicado - 757 - JCJ DROGARIA LTDA | 757 | 0012_04.pdf
+2026-02-13 10:12:56 - Processando empresa: 769 - J M DE SOUZA DISTRIBUDORA DE BEBIDAS E ALIMENTOS (Código: 769)
+2026-02-13 10:13:22 - Procurando janela de confirmação...
+2026-02-13 10:13:22 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:13:22 - Botão 'OK' clicado com sucesso
+2026-02-13 10:13:23 - Publicado - 769 - J M DE SOUZA DISTRIBUDORA DE BEBIDAS E ALIMENTOS | 769 | 02-2026_01.pdf
+2026-02-13 10:13:23 - Processando empresa: 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA (Código: 771)
+2026-02-13 10:13:47 - Procurando janela de confirmação...
+2026-02-13 10:13:47 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:13:47 - Botão 'OK' clicado com sucesso
+2026-02-13 10:13:47 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0003_01.pdf
+2026-02-13 10:14:11 - Procurando janela de confirmação...
+2026-02-13 10:14:11 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:14:11 - Botão 'OK' clicado com sucesso
+2026-02-13 10:14:11 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0004_02.pdf
+2026-02-13 10:14:35 - Procurando janela de confirmação...
+2026-02-13 10:14:35 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:14:35 - Botão 'OK' clicado com sucesso
+2026-02-13 10:14:35 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0005_03.pdf
+2026-02-13 10:15:01 - Procurando janela de confirmação...
+2026-02-13 10:15:01 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:15:02 - Botão 'OK' clicado com sucesso
+2026-02-13 10:15:02 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0006_04.pdf
+2026-02-13 10:15:25 - Procurando janela de confirmação...
+2026-02-13 10:15:25 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:15:25 - Botão 'OK' clicado com sucesso
+2026-02-13 10:15:25 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0007_05.pdf
+2026-02-13 10:15:44 - Procurando janela de confirmação...
+2026-02-13 10:15:54 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:15:54 - Botão 'OK' clicado com sucesso
+2026-02-13 10:15:54 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0008_06.pdf
+2026-02-13 10:16:12 - Procurando janela de confirmação...
+2026-02-13 10:16:13 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:16:13 - Botão 'OK' clicado com sucesso
+2026-02-13 10:16:13 - Publicado - 771 - RESTAURANTE MINEIRICE DE VOLTA REDONDA LTDA | 771 | 0009_07.pdf
+2026-02-13 10:16:13 - Processando empresa: 773 - SBCA CONSULTORIA DE COMERCIO LTDA (Código: 773)
+2026-02-13 10:16:32 - Procurando janela de confirmação...
+2026-02-13 10:16:32 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:16:33 - Botão 'OK' clicado com sucesso
+2026-02-13 10:16:33 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 0005_01.pdf
+2026-02-13 10:16:51 - Procurando janela de confirmação...
+2026-02-13 10:16:51 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:16:51 - Botão 'OK' clicado com sucesso
+2026-02-13 10:16:52 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 0006_02.pdf
+2026-02-13 10:17:11 - Procurando janela de confirmação...
+2026-02-13 10:17:11 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:17:11 - Botão 'OK' clicado com sucesso
+2026-02-13 10:17:12 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 0007_03.pdf
+2026-02-13 10:17:30 - Procurando janela de confirmação...
+2026-02-13 10:17:30 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:17:30 - Botão 'OK' clicado com sucesso
+2026-02-13 10:17:30 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 0008_04.pdf
+2026-02-13 10:17:49 - Procurando janela de confirmação...
+2026-02-13 10:17:49 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:17:49 - Botão 'OK' clicado com sucesso
+2026-02-13 10:17:49 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 01-2026_05.pdf
+2026-02-13 10:18:09 - Procurando janela de confirmação...
+2026-02-13 10:18:09 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:18:09 - Botão 'OK' clicado com sucesso
+2026-02-13 10:18:09 - Publicado - 773 - SBCA CONSULTORIA DE COMERCIO LTDA | 773 | 02-2026_06.pdf
+2026-02-13 10:18:09 - Processando empresa: 785 - CRICI DA SILVA CAMPOS PEREIRA CRECHE E EDUCACAO INFANTIL (Código: 785)
+2026-02-13 10:18:28 - Procurando janela de confirmação...
+2026-02-13 10:18:28 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:18:28 - Botão 'OK' clicado com sucesso
+2026-02-13 10:18:28 - Publicado - 785 - CRICI DA SILVA CAMPOS PEREIRA CRECHE E EDUCACAO INFANTIL | 785 | 0002_01.pdf
+2026-02-13 10:18:46 - Procurando janela de confirmação...
+2026-02-13 10:18:46 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:18:46 - Botão 'OK' clicado com sucesso
+2026-02-13 10:18:47 - Publicado - 785 - CRICI DA SILVA CAMPOS PEREIRA CRECHE E EDUCACAO INFANTIL | 785 | 02-2026_02.pdf
+2026-02-13 10:18:47 - Processando empresa: 787 - INKAR COMERCIO DE AUTOMOVEIS LTDA (Código: 787)
+2026-02-13 10:19:05 - Procurando janela de confirmação...
+2026-02-13 10:19:06 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:19:06 - Botão 'OK' clicado com sucesso
+2026-02-13 10:19:06 - Publicado - 787 - INKAR COMERCIO DE AUTOMOVEIS LTDA | 787 | 02-2026_01.pdf
+2026-02-13 10:19:06 - Processando empresa: 802 - ESTACAO DO SABOR BUFFET LTDA (Código: 802)
+2026-02-13 10:19:24 - Procurando janela de confirmação...
+2026-02-13 10:19:24 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:19:24 - Botão 'OK' clicado com sucesso
+2026-02-13 10:19:24 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0002_01.pdf
+2026-02-13 10:19:44 - Procurando janela de confirmação...
+2026-02-13 10:19:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:19:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:19:44 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0002_07.pdf
+2026-02-13 10:20:03 - Procurando janela de confirmação...
+2026-02-13 10:20:03 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:20:03 - Botão 'OK' clicado com sucesso
+2026-02-13 10:20:03 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0002_13.pdf
+2026-02-13 10:20:21 - Procurando janela de confirmação...
+2026-02-13 10:20:22 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:20:22 - Botão 'OK' clicado com sucesso
+2026-02-13 10:20:22 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0003_02.pdf
+2026-02-13 10:20:41 - Procurando janela de confirmação...
+2026-02-13 10:20:41 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:20:41 - Botão 'OK' clicado com sucesso
+2026-02-13 10:20:41 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0003_08.pdf
+2026-02-13 10:20:59 - Procurando janela de confirmação...
+2026-02-13 10:20:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:20:59 - Botão 'OK' clicado com sucesso
+2026-02-13 10:20:59 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0003_14.pdf
+2026-02-13 10:21:19 - Procurando janela de confirmação...
+2026-02-13 10:21:19 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:21:19 - Botão 'OK' clicado com sucesso
+2026-02-13 10:21:19 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0004_03.pdf
+2026-02-13 10:21:40 - Procurando janela de confirmação...
+2026-02-13 10:21:40 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:21:40 - Botão 'OK' clicado com sucesso
+2026-02-13 10:21:40 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0004_09.pdf
+2026-02-13 10:22:00 - Procurando janela de confirmação...
+2026-02-13 10:22:00 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:22:00 - Botão 'OK' clicado com sucesso
+2026-02-13 10:22:01 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0004_15.pdf
+2026-02-13 10:22:21 - Procurando janela de confirmação...
+2026-02-13 10:22:22 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:22:22 - Botão 'OK' clicado com sucesso
+2026-02-13 10:22:22 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0005_04.pdf
+2026-02-13 10:22:44 - Procurando janela de confirmação...
+2026-02-13 10:22:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:22:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:22:44 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0005_10.pdf
+2026-02-13 10:23:06 - Procurando janela de confirmação...
+2026-02-13 10:23:06 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:23:06 - Botão 'OK' clicado com sucesso
+2026-02-13 10:23:06 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0005_16.pdf
+2026-02-13 10:23:27 - Procurando janela de confirmação...
+2026-02-13 10:23:27 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:23:27 - Botão 'OK' clicado com sucesso
+2026-02-13 10:23:27 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0006_05.pdf
+2026-02-13 10:23:49 - Procurando janela de confirmação...
+2026-02-13 10:23:49 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:23:49 - Botão 'OK' clicado com sucesso
+2026-02-13 10:23:49 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0006_11.pdf
+2026-02-13 10:24:11 - Procurando janela de confirmação...
+2026-02-13 10:24:11 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:24:11 - Botão 'OK' clicado com sucesso
+2026-02-13 10:24:12 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0006_17.pdf
+2026-02-13 10:24:32 - Procurando janela de confirmação...
+2026-02-13 10:24:33 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:24:33 - Botão 'OK' clicado com sucesso
+2026-02-13 10:24:33 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0007_06.pdf
+2026-02-13 10:24:54 - Procurando janela de confirmação...
+2026-02-13 10:24:54 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:24:54 - Botão 'OK' clicado com sucesso
+2026-02-13 10:24:54 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0007_12.pdf
+2026-02-13 10:25:16 - Procurando janela de confirmação...
+2026-02-13 10:25:16 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:25:16 - Botão 'OK' clicado com sucesso
+2026-02-13 10:25:17 - Publicado - 802 - ESTACAO DO SABOR BUFFET LTDA | 802 | 0007_18.pdf
+2026-02-13 10:25:17 - Processando empresa: 829 - DROGARIAS AM LTDA (Código: 829)
+2026-02-13 10:25:38 - Procurando janela de confirmação...
+2026-02-13 10:25:38 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:25:38 - Botão 'OK' clicado com sucesso
+2026-02-13 10:25:39 - Publicado - 829 - DROGARIAS AM LTDA | 829 | 0002_01.pdf
+2026-02-13 10:26:00 - Procurando janela de confirmação...
+2026-02-13 10:26:00 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:26:00 - Botão 'OK' clicado com sucesso
+2026-02-13 10:26:00 - Publicado - 829 - DROGARIAS AM LTDA | 829 | 0003_02.pdf
+2026-02-13 10:26:21 - Procurando janela de confirmação...
+2026-02-13 10:26:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:26:21 - Botão 'OK' clicado com sucesso
+2026-02-13 10:26:21 - Publicado - 829 - DROGARIAS AM LTDA | 829 | 0004_03.pdf
+2026-02-13 10:26:43 - Procurando janela de confirmação...
+2026-02-13 10:26:43 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:26:43 - Botão 'OK' clicado com sucesso
+2026-02-13 10:26:44 - Publicado - 829 - DROGARIAS AM LTDA | 829 | 0005_04.pdf
+2026-02-13 10:27:05 - Procurando janela de confirmação...
+2026-02-13 10:27:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:27:05 - Botão 'OK' clicado com sucesso
+2026-02-13 10:27:05 - Publicado - 829 - DROGARIAS AM LTDA | 829 | 0006_05.pdf
+2026-02-13 10:27:05 - Processando empresa: 854 - DROGARIA SENA LTDA (Código: 854)
+2026-02-13 10:27:25 - Procurando janela de confirmação...
+2026-02-13 10:27:25 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:27:25 - Botão 'OK' clicado com sucesso
+2026-02-13 10:27:25 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0005_11.pdf
+2026-02-13 10:27:45 - Procurando janela de confirmação...
+2026-02-13 10:27:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:27:45 - Botão 'OK' clicado com sucesso
+2026-02-13 10:27:45 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0006_12.pdf
+2026-02-13 10:28:05 - Procurando janela de confirmação...
+2026-02-13 10:28:06 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:28:06 - Botão 'OK' clicado com sucesso
+2026-02-13 10:28:06 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0007_02.pdf
+2026-02-13 10:28:26 - Procurando janela de confirmação...
+2026-02-13 10:28:26 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:28:26 - Botão 'OK' clicado com sucesso
+2026-02-13 10:28:26 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0007_13.pdf
+2026-02-13 10:28:44 - Procurando janela de confirmação...
+2026-02-13 10:28:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:28:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:28:45 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0008_03.pdf
+2026-02-13 10:29:04 - Procurando janela de confirmação...
+2026-02-13 10:29:04 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:29:04 - Botão 'OK' clicado com sucesso
+2026-02-13 10:29:05 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0008_14.pdf
+2026-02-13 10:29:24 - Procurando janela de confirmação...
+2026-02-13 10:29:24 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:29:24 - Botão 'OK' clicado com sucesso
+2026-02-13 10:29:24 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0009_04.pdf
+2026-02-13 10:29:44 - Procurando janela de confirmação...
+2026-02-13 10:29:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:29:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:29:44 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0010_05.pdf
+2026-02-13 10:30:03 - Procurando janela de confirmação...
+2026-02-13 10:30:03 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:30:03 - Botão 'OK' clicado com sucesso
+2026-02-13 10:30:03 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0010_06.pdf
+2026-02-13 10:30:22 - Procurando janela de confirmação...
+2026-02-13 10:30:22 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:30:22 - Botão 'OK' clicado com sucesso
+2026-02-13 10:30:23 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0011_01.pdf
+2026-02-13 10:30:41 - Procurando janela de confirmação...
+2026-02-13 10:30:41 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:30:42 - Botão 'OK' clicado com sucesso
+2026-02-13 10:30:42 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0016_07.pdf
+2026-02-13 10:31:01 - Procurando janela de confirmação...
+2026-02-13 10:31:01 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:31:01 - Botão 'OK' clicado com sucesso
+2026-02-13 10:31:01 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0017_08.pdf
+2026-02-13 10:31:22 - Procurando janela de confirmação...
+2026-02-13 10:31:22 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:31:23 - Botão 'OK' clicado com sucesso
+2026-02-13 10:31:23 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0018_09.pdf
+2026-02-13 10:31:42 - Procurando janela de confirmação...
+2026-02-13 10:31:42 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:31:42 - Botão 'OK' clicado com sucesso
+2026-02-13 10:31:43 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 0019_10.pdf
+2026-02-13 10:32:01 - Procurando janela de confirmação...
+2026-02-13 10:32:01 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:32:01 - Botão 'OK' clicado com sucesso
+2026-02-13 10:32:02 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 01-2026_15.pdf
+2026-02-13 10:32:21 - Procurando janela de confirmação...
+2026-02-13 10:32:21 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:32:21 - Botão 'OK' clicado com sucesso
+2026-02-13 10:32:21 - Publicado - 854 - DROGARIA SENA LTDA | 854 | 02-2026_16.pdf
+2026-02-13 10:32:21 - Processando empresa: 855 - MR ENGENHARIA E COMERCIO DE MAQUINAS INDUSTRIAIS LTDA (Código: 855)
+2026-02-13 10:32:41 - Procurando janela de confirmação...
+2026-02-13 10:32:41 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:32:41 - Botão 'OK' clicado com sucesso
+2026-02-13 10:32:41 - Publicado - 855 - MR ENGENHARIA E COMERCIO DE MAQUINAS INDUSTRIAIS LTDA | 855 | 0054_01.pdf
+2026-02-13 10:32:41 - Processando empresa: 858 - AKM MERCADO LTDA (Código: 858)
+2026-02-13 10:32:59 - Procurando janela de confirmação...
+2026-02-13 10:32:59 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:32:59 - Botão 'OK' clicado com sucesso
+2026-02-13 10:33:00 - Publicado - 858 - AKM MERCADO LTDA | 858 | 02-2026_01.pdf
+2026-02-13 10:33:00 - Processando empresa: 880 - J A P RESTAURANTE E DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS DE VOLTA REDONDA LTDA (Código: 880)
+2026-02-13 10:33:26 - Procurando janela de confirmação...
+2026-02-13 10:33:26 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:33:26 - Botão 'OK' clicado com sucesso
+2026-02-13 10:33:27 - Publicado - 880 - J A P RESTAURANTE E DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS DE VOLTA REDONDA LTDA | 880 | 0045_01.pdf
+2026-02-13 10:33:45 - Procurando janela de confirmação...
+2026-02-13 10:33:45 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:33:45 - Botão 'OK' clicado com sucesso
+2026-02-13 10:33:46 - Publicado - 880 - J A P RESTAURANTE E DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS DE VOLTA REDONDA LTDA | 880 | 02-2026_02.pdf
+2026-02-13 10:33:46 - Processando empresa: 884 - SISTEMA RESENDENSE DE COMUNICACAO LTDA (Código: 884)
+2026-02-13 10:34:04 - Procurando janela de confirmação...
+2026-02-13 10:34:04 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:34:04 - Botão 'OK' clicado com sucesso
+2026-02-13 10:34:05 - Publicado - 884 - SISTEMA RESENDENSE DE COMUNICACAO LTDA | 884 | 0014_01.pdf
+2026-02-13 10:34:24 - Procurando janela de confirmação...
+2026-02-13 10:34:24 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:34:24 - Botão 'OK' clicado com sucesso
+2026-02-13 10:34:25 - Publicado - 884 - SISTEMA RESENDENSE DE COMUNICACAO LTDA | 884 | 0014_02.pdf
+2026-02-13 10:34:44 - Procurando janela de confirmação...
+2026-02-13 10:34:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:34:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:34:45 - Publicado - 884 - SISTEMA RESENDENSE DE COMUNICACAO LTDA | 884 | 0014_03.pdf
+2026-02-13 10:34:45 - Processando empresa: 925 - DRAPPA LTDA (Código: 925)
+2026-02-13 10:35:03 - Procurando janela de confirmação...
+2026-02-13 10:35:03 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:35:03 - Botão 'OK' clicado com sucesso
+2026-02-13 10:35:03 - Publicado - 925 - DRAPPA LTDA | 925 | 02-2026_01.pdf
+2026-02-13 10:35:03 - Processando empresa: 968 - M P BRITO COMITRE CORRETORA DE SEGUROS LTDA (Código: 968)
+2026-02-13 10:35:23 - Procurando janela de confirmação...
+2026-02-13 10:35:23 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:35:23 - Botão 'OK' clicado com sucesso
+2026-02-13 10:35:23 - Publicado - 968 - M P BRITO COMITRE CORRETORA DE SEGUROS LTDA | 968 | 02-2026_01.pdf
+2026-02-13 10:35:23 - Processando empresa: 97 - ALVES E ALVES MUNDO DOS ESPORTES VR EIRELI (Código: 97)
+2026-02-13 10:35:44 - Procurando janela de confirmação...
+2026-02-13 10:35:44 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:35:44 - Botão 'OK' clicado com sucesso
+2026-02-13 10:35:45 - Publicado - 97 - ALVES E ALVES MUNDO DOS ESPORTES VR EIRELI | 97 | 01-2026_01.pdf
+2026-02-13 10:36:05 - Procurando janela de confirmação...
+2026-02-13 10:36:05 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:36:05 - Botão 'OK' clicado com sucesso
+2026-02-13 10:36:05 - Publicado - 97 - ALVES E ALVES MUNDO DOS ESPORTES VR EIRELI | 97 | 02-2026_02.pdf
+2026-02-13 10:36:05 - Processando empresa: 979 - PLANETA PIZZA DE VOLTA REDONDA LTDA (Código: 979)
+2026-02-13 10:36:25 - Procurando janela de confirmação...
+2026-02-13 10:36:25 - Janela de confirmação encontrada: 'Atenção'
+2026-02-13 10:36:25 - Botão 'OK' clicado com sucesso
+2026-02-13 10:36:25 - Publicado - 979 - PLANETA PIZZA DE VOLTA REDONDA LTDA | 979 | 0007_01.pdf
+2026-02-13 10:36:25 - AVISO: Código não encontrado para 'CROZEM PRODUTOS ALIMENTICIOS LTDA', pulando.
+2026-02-13 10:36:25 - AVISO: Código não encontrado para 'GELOMAR DE ANGRA LTDA', pulando.
+2026-02-13 10:36:25 - AVISO: Código não encontrado para 'POP DIVULGACOES E PROMOCOES EIRELI', pulando.
+2026-02-13 10:36:25 - AVISO: Código não encontrado para 'POP PROMOCOES E SERVICOS LTDA', pulando.
+2026-02-13 10:36:25 - AVISO: Código não encontrado para 'Relatórios Fiscais02.2026', pulando.
+2026-02-13 10:36:25 - Concluído! 198/314 documentos publicados com sucesso.
