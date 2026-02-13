@@ -419,9 +419,10 @@ class DomBot:
                 for empresa in os.listdir(diretorio):
                     caminho_empresa = os.path.join(diretorio, empresa)
                     if os.path.isdir(caminho_empresa) and empresa != "Relatórios Fiscais":
-                        for arquivo in os.listdir(caminho_empresa):
-                            if arquivo.lower().endswith('.pdf'):
-                                self.total_pdfs += 1
+                        for raiz, _, arquivos in os.walk(caminho_empresa):
+                            for arquivo in arquivos:
+                                if arquivo.lower().endswith('.pdf'):
+                                    self.total_pdfs += 1
                 self.log(f"Total de PDFs encontrados: {self.total_pdfs}")
 
                 # CHECKPOINT 2
@@ -449,15 +450,19 @@ class DomBot:
                         continue
                     self.log(f"Processando empresa: {empresa} (Código: {numero_empresa})")
 
-                    for arquivo in os.listdir(caminho_empresa):
+                    for raiz, _, arquivos in os.walk(caminho_empresa):
                         # CHECKPOINT 4
                         if self.check_interrupted():
                             break
 
-                        if arquivo.lower().endswith('.pdf'):
-                            pdf_path = os.path.join(caminho_empresa, arquivo)
-                            if self.interact_with_dominio_escrita_fiscal(pdf_path, numero_empresa, empresa):
-                                self.pdfs_sucesso += 1
+                        for arquivo in arquivos:
+                            if self.check_interrupted():
+                                break
+
+                            if arquivo.lower().endswith('.pdf'):
+                                pdf_path = os.path.join(raiz, arquivo)
+                                if self.interact_with_dominio_escrita_fiscal(pdf_path, numero_empresa, empresa):
+                                    self.pdfs_sucesso += 1
 
             else:
                 # === MODO ZIP/RAR (legado) ===
@@ -511,14 +516,18 @@ class DomBot:
                             continue
                         self.log(f"Processando empresa: {empresa} (Código: {numero_empresa})")
 
-                        for arquivo in os.listdir(caminho_empresa):
+                        for raiz, _, arquivos in os.walk(caminho_empresa):
                             if self.check_interrupted():
                                 break
 
-                            if arquivo.lower().endswith('.pdf'):
-                                pdf_path = os.path.join(caminho_empresa, arquivo)
-                                if self.interact_with_dominio_escrita_fiscal(pdf_path, numero_empresa, empresa):
-                                    self.pdfs_sucesso += 1
+                            for arquivo in arquivos:
+                                if self.check_interrupted():
+                                    break
+
+                                if arquivo.lower().endswith('.pdf'):
+                                    pdf_path = os.path.join(raiz, arquivo)
+                                    if self.interact_with_dominio_escrita_fiscal(pdf_path, numero_empresa, empresa):
+                                        self.pdfs_sucesso += 1
 
             # Resumo final
             if self.check_interrupted():
@@ -727,7 +736,7 @@ class AppUI(ctk.CTk):
             for empresa in os.listdir(pasta):
                 caminho = os.path.join(pasta, empresa)
                 if os.path.isdir(caminho) and empresa != "Relatórios Fiscais":
-                    pdfs = [f for f in os.listdir(caminho) if f.lower().endswith('.pdf')]
+                    pdfs = [f for _, _, files in os.walk(caminho) for f in files if f.lower().endswith('.pdf')]
                     pdf_count += len(pdfs)
                     if not pdfs:
                         empresas_sem_pdf.append(empresa)
