@@ -8,6 +8,7 @@ import threading
 import time
 import traceback
 from datetime import datetime
+import requests
 
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
@@ -776,6 +777,19 @@ class AppUI(ctk.CTk):
             self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Validação: arquivo {os.path.basename(arquivo)} encontrado")
 
     # === EXECUÇÃO ===
+    def enviar_notificacao_discord(self, msg, pdfs_sucesso, total_pdfs):
+        WEBHOOK_URL = "https://discord.com/api/webhooks/1491780963498328245/o4qRut8SdHJtigsU__c9cEvht7gArhzqKuezVAtZYF4ZMuK-YlTzDLTXy0PCE7KBbUZR"
+        conteudo = (
+            f"<@&1299044416991793303> @hugoalmeida0534_77894 \n"
+            f"✅ **Publicacao de Parcelamentos Concluida!**\n"
+            f"📄 {pdfs_sucesso}/{total_pdfs} documentos publicados com sucesso.\n"
+            f"🕐 {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}"
+        )
+        try:
+            requests.post(WEBHOOK_URL, json={"content": conteudo}, timeout=10)
+        except Exception as e:
+            self.log_message(f"{datetime.now().strftime('%H:%M:%S')} - Aviso: nao foi possivel enviar notificacao Discord: {e}")
+
     def iniciar_processamento(self):
         tem_zip = bool(self.arquivo_zip_selecionado.get())
         tem_pasta = bool(self.pasta_selecionada.get())
@@ -856,6 +870,7 @@ class AppUI(ctk.CTk):
                 )
 
             if success:
+                self.enviar_notificacao_discord(msg, bot.pdfs_sucesso, bot.total_pdfs)
                 messagebox.showinfo("Concluído", msg)
             else:
                 if "Interrompido" in msg:
